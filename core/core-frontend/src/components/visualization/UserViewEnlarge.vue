@@ -7,7 +7,7 @@
     width="70vw"
     trigger="click"
   >
-    <div class="export-button">
+    <!-- <div class="export-button">
       <el-select
         v-if="optType === 'enlarge' && authShow"
         v-model="pixel"
@@ -57,7 +57,7 @@
         导出Excel(带格式)
       </el-button>
       <el-divider class="close-divider" direction="vertical" v-if="authShow" />
-    </div>
+    </div> -->
     <div
       v-loading="downLoading"
       element-loading-text="导出中..."

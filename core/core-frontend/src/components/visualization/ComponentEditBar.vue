@@ -99,7 +99,7 @@
               v-if="element.innerType !== 'rich-text' && barShowCheck('details')"
               >查看数据</el-dropdown-item
             >
-            <el-dropdown-item
+            <!-- <el-dropdown-item
               style="padding: 0"
               v-if="element.innerType !== 'rich-text' && barShowCheck('download')"
               @click.prevent
@@ -124,7 +124,7 @@
                   </el-dropdown-menu>
                 </template>
               </el-dropdown>
-            </el-dropdown-item>
+            </el-dropdown-item> -->
           </template>
           <el-dropdown-item divided @click="deleteComponent" v-if="barShowCheck('delete')"
             >删除</el-dropdown-item
@@ -132,7 +132,7 @@
         </el-dropdown-menu>
       </template>
     </el-dropdown>
-    <el-dropdown
+    <!-- <el-dropdown
       trigger="click"
       placement="right-start"
       v-if="element.innerType !== 'rich-text' && barShowCheck('previewDownload') && authShow"
@@ -153,7 +153,7 @@
           <el-dropdown-item @click="exportAsImage">图片</el-dropdown-item>
         </el-dropdown-menu>
       </template>
-    </el-dropdown>
+    </el-dropdown> -->
 
     <el-popover v-if="selectFieldShow" width="200" trigger="click" @mousedown="fieldsAreaDown">
       <template #reference>
@@ -203,12 +203,12 @@ const positionBarShow = {
     'setting',
     'copy',
     'delete',
-    'download',
+    // 'download',
     'unLinkage',
     'linkageSetting',
     'linkJumpSetting'
   ],
-  preview: ['enlarge', 'details', 'download', 'unLinkage', 'previewDownload'],
+  preview: ['enlarge', 'details', 'unLinkage'],
   multiplexing: ['multiplexing'],
   batchOpt: ['batchOpt'],
   linkage: ['linkage']
@@ -221,8 +221,8 @@ const componentTypeBarShow = {
     'details',
     'setting',
     'copy',
-    'download',
-    'previewDownload',
+    // 'download',
+    // 'previewDownload',
     'delete',
     'multiplexing',
     'batchOpt',

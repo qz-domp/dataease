@@ -153,7 +153,7 @@ const initOpenHandler = newWindow => {
         <template #dropdown>
           <el-dropdown-menu style="width: 130px">
             <el-dropdown-item icon="Refresh" @click="reload()">刷新数据 </el-dropdown-item>
-            <el-dropdown
+            <!-- <el-dropdown
               style="width: 100%"
               trigger="hover"
               placement="left-start"
@@ -177,7 +177,7 @@ const initOpenHandler = newWindow => {
                   }}</el-dropdown-item>
                 </el-dropdown-menu>
               </template>
-            </el-dropdown>
+            </el-dropdown> -->
           </el-dropdown-menu>
         </template>
       </el-dropdown>
